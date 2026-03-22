@@ -325,6 +325,25 @@ p {
   100% { top: 200%; }
 }
 
+/* ═══════════════════════════════════════
+   PAGE LOADER KEYFRAMES
+   ═══════════════════════════════════════ */
+
+@keyframes loaderSlideUp {
+  from { opacity: 0; transform: translateY(100%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes loaderBar {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+@keyframes loaderFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .rv, .rv-l, .rv-r, .stg > * {
