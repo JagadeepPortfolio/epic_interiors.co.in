@@ -38,7 +38,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-7">
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Phone / WhatsApp</span>
-                  <span className="text-[17px] font-light"><a href="tel:+919032506322" className="hover:text-gold transition-colors">+91 90325 06323</a></span>
+                  <span className="text-[17px] font-light"><a href="tel:+919032506322" className="hover:text-gold transition-colors">+91 90325 06322</a></span>
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Studio Hours</span>

@@ -53,7 +53,7 @@ export default function BookConsultationPage() {
               </a>
               <p className="text-[13px] text-mid">
                 Or call us directly:{' '}
-                <a href="tel:+919032506322" className="text-gold hover:underline">+91 90325 06323</a>
+                <a href="tel:+919032506322" className="text-gold hover:underline">+91 90325 06322</a>
               </p>
             </div>
           </div>

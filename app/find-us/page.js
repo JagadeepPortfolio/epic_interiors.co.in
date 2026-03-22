@@ -46,7 +46,7 @@ export default function FindUsPage() {
               </div>
               <div className="flex flex-col gap-1.5">
                 <strong className="text-[9px] tracking-[.35em] uppercase text-gold font-normal">Phone</strong>
-                <a href="tel:+919032506322" className="text-sm text-cream-dim hover:text-gold transition-colors">+91 90325 06323</a>
+                <a href="tel:+919032506322" className="text-sm text-cream-dim hover:text-gold transition-colors">+91 90325 06322</a>
               </div>
               <div className="flex flex-wrap gap-4 mt-2">
                 <a
