@@ -42,12 +42,12 @@ export default function ContactPage() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Studio Hours</span>
-                  <span className="text-[17px] font-light">Mon – Fri &middot; 10:00 AM – 7:00 PM</span>
-                  <span className="text-[15px] font-light text-mid">Saturday &middot; 10:00 AM – 5:00 PM</span>
+                  <span className="text-[17px] font-light">Mon – Fri &middot; 9:00 AM – 7:00 PM</span>
+                  <span className="text-[15px] font-light text-mid">Saturday &middot; 9:00 AM – 5:00 PM</span>
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Location</span>
-                  <span className="text-[17px] font-light">Hyderabad, Telangana</span>
+                  <span className="text-[17px] font-light">Kukatpally, Hyderabad, Telangana</span>
                 </div>
               </div>
               <a

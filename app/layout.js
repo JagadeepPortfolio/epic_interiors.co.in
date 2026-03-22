@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
               telephone: '+919032506322',
               address: {
                 '@type': 'PostalAddress',
-                addressLocality: 'Hyderabad',
+                addressLocality: 'Kukatpally, Hyderabad',
                 addressRegion: 'Telangana',
                 addressCountry: 'IN',
               },
@@ -79,13 +79,13 @@ export default function RootLayout({ children }) {
                 {
                   '@type': 'OpeningHoursSpecification',
                   dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-                  opens: '10:00',
+                  opens: '09:00',
                   closes: '19:00',
                 },
                 {
                   '@type': 'OpeningHoursSpecification',
                   dayOfWeek: 'Saturday',
-                  opens: '10:00',
+                  opens: '09:00',
                   closes: '17:00',
                 },
               ],

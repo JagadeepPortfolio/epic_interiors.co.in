@@ -226,11 +226,11 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Studio Hours</span>
-                  <span className="text-[17px] font-light">Mon – Sat &middot; 10:00 AM – 7:00 PM</span>
+                  <span className="text-[17px] font-light">Mon – Sat &middot; 9:00 AM – 7:00 PM</span>
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Location</span>
-                  <span className="text-[17px] font-light">Hyderabad, Telangana</span>
+                  <span className="text-[17px] font-light">Kukatpally, Hyderabad, Telangana</span>
                 </div>
               </div>
               <a
@@ -266,11 +266,11 @@ export default function Home() {
               </h3>
               <div className="flex flex-col gap-1.5">
                 <strong className="text-[9px] tracking-[.35em] uppercase text-gold font-normal">Address</strong>
-                <span className="text-sm text-cream-dim leading-relaxed">Hyderabad, Telangana, India</span>
+                <span className="text-sm text-cream-dim leading-relaxed">Kukatpally, Hyderabad, Telangana, India</span>
               </div>
               <div className="flex flex-col gap-1.5">
                 <strong className="text-[9px] tracking-[.35em] uppercase text-gold font-normal">Hours</strong>
-                <span className="text-sm text-cream-dim leading-relaxed">Mon – Fri: 10 AM – 7 PM<br />Saturday: 10 AM – 5 PM</span>
+                <span className="text-sm text-cream-dim leading-relaxed">Mon – Fri: 9 AM – 7 PM<br />Saturday: 9 AM – 5 PM</span>
               </div>
               <Link href="/find-us" className="btn-ghost w-fit mt-2">Get Directions</Link>
             </div>

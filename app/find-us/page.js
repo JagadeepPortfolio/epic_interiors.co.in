@@ -34,13 +34,13 @@ export default function FindUsPage() {
               </h3>
               <div className="flex flex-col gap-1.5">
                 <strong className="text-[9px] tracking-[.35em] uppercase text-gold font-normal">Address</strong>
-                <span className="text-sm text-cream-dim leading-relaxed">Hyderabad, Telangana, India</span>
+                <span className="text-sm text-cream-dim leading-relaxed">Kukatpally, Hyderabad, Telangana, India</span>
               </div>
               <div className="flex flex-col gap-1.5">
                 <strong className="text-[9px] tracking-[.35em] uppercase text-gold font-normal">Hours</strong>
                 <span className="text-sm text-cream-dim leading-relaxed">
-                  Mon – Fri: 10:00 AM – 7:00 PM<br />
-                  Saturday: 10:00 AM – 5:00 PM<br />
+                  Mon – Fri: 9:00 AM – 7:00 PM<br />
+                  Saturday: 9:00 AM – 5:00 PM<br />
                   Sunday: By appointment
                 </span>
               </div>
