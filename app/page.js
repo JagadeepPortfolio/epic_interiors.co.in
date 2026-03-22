@@ -29,20 +29,20 @@ export default function Home() {
         {/* Diamond images — desktop only */}
         <div className="hidden lg:block absolute right-0 top-0 w-[52%] h-full pointer-events-none opacity-0 animate-[fadeIn_1s_ease_forwards_0.5s]">
           <div className="absolute top-[9%] right-[24%] w-[230px] h-[230px] rounded-[18px] rotate-45 overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,.6),0_0_0_1px_rgba(184,149,58,.12)] hover:shadow-[0_32px_80px_rgba(0,0,0,.7),0_0_0_1px_rgba(184,149,58,.35)] transition-shadow duration-500">
-            <Image src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80" alt="Living room interior" width={700} height={700} className="w-full h-full object-cover -rotate-45 scale-[1.55] hover:scale-[1.7] transition-transform duration-700" style={{ transitionTimingFunction: 'var(--ease-out)' }} />
+            <Image src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80" alt="Living room interior" fill sizes="230px" className="object-cover -rotate-45 scale-[1.55] hover:scale-[1.7] transition-transform duration-700" style={{ transitionTimingFunction: 'var(--ease-out)' }} />
           </div>
           <div className="absolute top-[38%] right-[7%] w-[195px] h-[195px] rounded-[18px] rotate-45 overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,.6),0_0_0_1px_rgba(184,149,58,.12)]">
-            <Image src="https://images.unsplash.com/photo-1556912167-f556f1f39faa?w=600&q=80" alt="Modern kitchen" width={600} height={600} className="w-full h-full object-cover -rotate-45 scale-[1.55]" />
+            <Image src="https://images.unsplash.com/photo-1556912167-f556f1f39faa?w=600&q=80" alt="Modern kitchen" fill sizes="195px" className="object-cover -rotate-45 scale-[1.55]" />
           </div>
           <div className="absolute top-[62%] right-[30%] w-[215px] h-[215px] rounded-[18px] rotate-45 overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,.6),0_0_0_1px_rgba(184,149,58,.12)]">
-            <Image src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80" alt="Elegant bedroom" width={600} height={600} className="w-full h-full object-cover -rotate-45 scale-[1.55]" />
+            <Image src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80" alt="Elegant bedroom" fill sizes="215px" className="object-cover -rotate-45 scale-[1.55]" />
           </div>
         </div>
 
         {/* Hero text */}
         <div className="relative z-[2] w-full px-[52px] max-md:px-6 pb-[88px] max-md:pb-16 pt-32">
           <div className="sec-label opacity-0 translate-y-4 animate-[fadeUp_.7s_ease_forwards_.3s]">
-            Hyderabad&apos;s Premier Interior Studio
+            Premier Interior Studio
           </div>
           <h1 className="mt-5">
             <span className="block overflow-hidden"><span className="block opacity-0 translate-y-full animate-[slideUp_.9s_var(--ease-out)_forwards_.4s]">Elevate</span></span>
@@ -120,7 +120,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════
           STATS
          ═══════════════════════════════════════ */}
-      <div className="grid grid-cols-2 md:grid-cols-4 border-y border-border">
+      <div className="grid grid-cols-3 border-y border-border">
         {stats.map((stat, i) => (
           <div key={i} className="rv group relative p-[64px_48px] max-md:p-[36px_24px] border-r border-border last:border-r-0 overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(184,149,58,.09)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
@@ -150,9 +150,9 @@ export default function Home() {
                 <Image
                   src={item.img}
                   alt={item.label}
-                  width={900}
-                  height={600}
-                  className="w-full h-full object-cover brightness-[.8] group-hover:scale-[1.07] group-hover:brightness-100 transition-all duration-800"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover brightness-[.8] group-hover:scale-[1.07] group-hover:brightness-100 transition-all duration-800"
                   style={{ transitionTimingFunction: 'var(--ease-out)' }}
                   priority={i < 3}
                 />
@@ -222,7 +222,7 @@ export default function Home() {
               <div className="flex flex-col gap-7 mt-10">
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Phone / WhatsApp</span>
-                  <span className="text-[17px] font-light"><a href="tel:+919032506323" className="hover:text-gold transition-colors duration-[var(--t-fast)]">+91 90325 06323</a></span>
+                  <span className="text-[17px] font-light"><a href="tel:+919032506322" className="hover:text-gold transition-colors duration-[var(--t-fast)]">+91 90325 06323</a></span>
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Studio Hours</span>
@@ -234,7 +234,7 @@ export default function Home() {
                 </div>
               </div>
               <a
-                href="https://wa.me/919032506323?text=Hi%20Epic%20Interiors%2C%20I%27d%20like%20a%20free%20consultation%20for%20my%20home%20interior."
+                href="https://wa.me/919032506322?text=Hi%20Epic%20Interiors%2C%20I%27d%20like%20a%20free%20consultation%20for%20my%20home%20interior."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-wa mt-9 w-fit"
@@ -312,10 +312,9 @@ const services = [
 ];
 
 const stats = [
-  { value: 500, suffix: '+', label: 'Projects Completed' },
-  { value: 8, suffix: '+', label: 'Years of Excellence' },
+  { value: 100, suffix: '+', label: 'Projects Completed' },
+  { value: 3, suffix: '+', label: 'Years of Excellence' },
   { value: 98, suffix: '%', label: 'Client Satisfaction' },
-  { value: 45, suffix: '+', label: 'Design Awards' },
 ];
 
 const portfolioItems = [

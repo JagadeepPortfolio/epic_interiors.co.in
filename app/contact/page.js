@@ -38,7 +38,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-7">
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Phone / WhatsApp</span>
-                  <span className="text-[17px] font-light"><a href="tel:+919032506323" className="hover:text-gold transition-colors">+91 90325 06323</a></span>
+                  <span className="text-[17px] font-light"><a href="tel:+919032506322" className="hover:text-gold transition-colors">+91 90325 06323</a></span>
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[9px] tracking-[.4em] uppercase text-gold/60">Studio Hours</span>
@@ -51,7 +51,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <a
-                href="https://wa.me/919032506323?text=Hi%20Epic%20Interiors%2C%20I%27d%20like%20a%20free%20consultation%20for%20my%20home%20interior."
+                href="https://wa.me/919032506322?text=Hi%20Epic%20Interiors%2C%20I%27d%20like%20a%20free%20consultation%20for%20my%20home%20interior."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-wa mt-9 w-fit"

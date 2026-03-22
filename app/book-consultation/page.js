@@ -6,7 +6,7 @@ export const metadata = {
     'Book a free interior design consultation with Epic Interiors in Hyderabad. No commitments — just great design ideas for your space.',
 };
 
-const WA_URL = 'https://wa.me/919032506323?text=Hi%20Epic%20Interiors!%20I%27d%20like%20to%20book%20a%20free%20consultation%20for%20my%20space.%20Could%20you%20help%20me%20get%20started%3F';
+const WA_URL = 'https://wa.me/919032506322?text=Hi%20Epic%20Interiors!%20I%27d%20like%20to%20book%20a%20free%20consultation%20for%20my%20space.%20Could%20you%20help%20me%20get%20started%3F';
 
 export default function BookConsultationPage() {
   return (
@@ -53,7 +53,7 @@ export default function BookConsultationPage() {
               </a>
               <p className="text-[13px] text-mid">
                 Or call us directly:{' '}
-                <a href="tel:+919032506323" className="text-gold hover:underline">+91 90325 06323</a>
+                <a href="tel:+919032506322" className="text-gold hover:underline">+91 90325 06323</a>
               </p>
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '/services', label: 'Services' },
@@ -37,10 +38,17 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="font-display text-[20px] tracking-[.3em] z-50 flex items-center gap-[2px]"
+          className="z-50 flex items-center"
           onClick={() => setMenuOpen(false)}
         >
-          EPIC&nbsp;<span className="text-gold">INTERIORS</span>
+          <Image
+            src="/logo-light.png"
+            alt="Epic Interiors"
+            width={140}
+            height={88}
+            className="h-[44px] w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

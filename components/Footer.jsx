@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const footerLinks = [
   { href: '/services', label: 'Services' },
@@ -11,9 +12,15 @@ const footerLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-border py-9 px-[52px] max-md:px-6 flex items-center justify-between flex-wrap gap-5 max-md:flex-col max-md:text-center">
-      <div className="font-display text-[17px] tracking-[.3em] text-cream/[.22]">
-        EPIC&nbsp;<span className="text-gold/40">INTERIORS</span>
-      </div>
+      <Link href="/">
+        <Image
+          src="/logo-light.png"
+          alt="Epic Interiors"
+          width={140}
+          height={88}
+          className="h-[36px] w-auto opacity-30 hover:opacity-60 transition-opacity duration-300"
+        />
+      </Link>
       <div className="flex gap-7">
         {footerLinks.map((link) => (
           <Link

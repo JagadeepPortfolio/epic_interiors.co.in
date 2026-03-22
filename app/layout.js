@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
               name: 'Epic Interiors',
               description: 'Premium interior design studio in Hyderabad — modular kitchens, wardrobes, TV units, false ceilings, and complete home interiors.',
               url: 'https://epicinteriors.vercel.app',
-              telephone: '+919032506323',
+              telephone: '+919032506322',
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'Hyderabad',

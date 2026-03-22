@@ -50,9 +50,9 @@ export default function PortfolioGallery() {
             <Image
               src={project.img}
               alt={project.title}
-              width={800}
-              height={600}
-              className="w-full h-full object-cover brightness-[.8] group-hover:scale-[1.07] group-hover:brightness-100 transition-all duration-800"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover brightness-[.8] group-hover:scale-[1.07] group-hover:brightness-100 transition-all duration-800"
               style={{ transitionTimingFunction: 'var(--ease-out)' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/[.68] to-transparent flex flex-col items-start justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-400">

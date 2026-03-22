@@ -46,11 +46,11 @@ export default function FindUsPage() {
               </div>
               <div className="flex flex-col gap-1.5">
                 <strong className="text-[9px] tracking-[.35em] uppercase text-gold font-normal">Phone</strong>
-                <a href="tel:+919032506323" className="text-sm text-cream-dim hover:text-gold transition-colors">+91 90325 06323</a>
+                <a href="tel:+919032506322" className="text-sm text-cream-dim hover:text-gold transition-colors">+91 90325 06323</a>
               </div>
               <div className="flex flex-wrap gap-4 mt-2">
                 <a
-                  href="https://wa.me/919032506323?text=Hi%20Epic%20Interiors%2C%20I%27d%20like%20to%20visit%20your%20studio.%20What%20are%20the%20timings%3F"
+                  href="https://wa.me/919032506322?text=Hi%20Epic%20Interiors%2C%20I%27d%20like%20to%20visit%20your%20studio.%20What%20are%20the%20timings%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-gold text-[10px]"

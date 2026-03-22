@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const WA_NUMBER = '919032506323';
+const WA_NUMBER = '919032506322';
 
 const serviceOptions = [
   'Modular Kitchen', 'Pooja Unit', 'TV Unit', 'Wardrobe',

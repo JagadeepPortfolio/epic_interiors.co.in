@@ -1,8 +1,11 @@
 'use client';
 
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function ScrollReveal() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReduced) {
@@ -22,12 +25,20 @@ export default function ScrollReveal() {
       { threshold: 0.15 }
     );
 
-    document.querySelectorAll('.rv, .rv-l, .rv-r, .stg').forEach((el) => {
-      observer.observe(el);
-    });
+    // Small delay to let the new page DOM render before observing
+    const timer = setTimeout(() => {
+      document.querySelectorAll('.rv, .rv-l, .rv-r, .stg').forEach((el) => {
+        if (!el.classList.contains('in')) {
+          observer.observe(el);
+        }
+      });
+    }, 50);
 
-    return () => observer.disconnect();
-  }, []);
+    return () => {
+      clearTimeout(timer);
+      observer.disconnect();
+    };
+  }, [pathname]); // Re-run on every route change
 
   return null;
 }

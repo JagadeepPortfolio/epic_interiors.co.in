@@ -29,13 +29,13 @@ export default function AboutPage() {
       <section className="sec bg-ink-2">
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="rv-l aspect-[4/3] rounded-[18px] overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,.6)]">
+            <div className="rv-l aspect-[4/3] rounded-[18px] overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,.6)] relative">
               <Image
                 src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
                 alt="Interior design studio workspace"
-                width={800}
-                height={600}
-                className="w-full h-full object-cover brightness-[.85]"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover brightness-[.85]"
               />
             </div>
             <div className="rv-r">
