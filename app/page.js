@@ -322,7 +322,7 @@ const portfolioItems = [
   { img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80', label: 'Living Room' },
   { img: '/uploads/bedroom1-1774802971070.jpg', label: 'Bedroom' },
   { img: '/uploads/wardrobe-1774802430130.jpg', label: 'Wardrobe' },
-  { img: 'https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=700&q=80', label: 'TV Unit' },
+  { img: '/uploads/tvunit.jpg', label: 'TV Unit' },
 ];
 
 const processSteps = [
