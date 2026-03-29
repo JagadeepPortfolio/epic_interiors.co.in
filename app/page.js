@@ -32,10 +32,10 @@ export default function Home() {
             <Image src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80" alt="Living room interior" fill sizes="230px" className="object-cover -rotate-45 scale-[1.55] hover:scale-[1.7] transition-transform duration-700" style={{ transitionTimingFunction: 'var(--ease-out)' }} />
           </div>
           <div className="absolute top-[38%] right-[7%] w-[195px] h-[195px] rounded-[18px] rotate-45 overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,.6),0_0_0_1px_rgba(184,149,58,.12)]">
-            <Image src="https://images.unsplash.com/photo-1556912167-f556f1f39faa?w=600&q=80" alt="Modern kitchen" fill sizes="195px" className="object-cover -rotate-45 scale-[1.55]" />
+            <Image src="/uploads/moduler-kitchen-1774802430130.jpg" alt="Modern kitchen" fill sizes="195px" className="object-cover -rotate-45 scale-[1.55]" />
           </div>
           <div className="absolute top-[62%] right-[30%] w-[215px] h-[215px] rounded-[18px] rotate-45 overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,.6),0_0_0_1px_rgba(184,149,58,.12)]">
-            <Image src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80" alt="Elegant bedroom" fill sizes="215px" className="object-cover -rotate-45 scale-[1.55]" />
+            <Image src="/uploads/bedroom1-1774802971070.jpg" alt="Elegant bedroom" fill sizes="215px" className="object-cover -rotate-45 scale-[1.55]" />
           </div>
         </div>
 
@@ -318,10 +318,10 @@ const stats = [
 ];
 
 const portfolioItems = [
-  { img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80', label: 'Modular Kitchen' },
+  { img: '/uploads/moduler-kitchen-1774802430130.jpg', label: 'Modular Kitchen' },
   { img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80', label: 'Living Room' },
-  { img: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=700&q=80', label: 'Bedroom' },
-  { img: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=80', label: 'Wardrobe' },
+  { img: '/uploads/bedroom1-1774802971070.jpg', label: 'Bedroom' },
+  { img: '/uploads/wardrobe-1774802430130.jpg', label: 'Wardrobe' },
   { img: 'https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=700&q=80', label: 'TV Unit' },
 ];
 
