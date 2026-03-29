@@ -6,10 +6,10 @@ import Image from 'next/image';
 const categories = ['All', 'Kitchen', 'Living', 'Bedroom', 'Wardrobe'];
 
 const projects = [
-  { title: 'Contemporary Modular Kitchen', category: 'Kitchen', location: 'Jubilee Hills', img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80' },
+  { title: 'Contemporary Modular Kitchen', category: 'Kitchen', location: 'Jubilee Hills', img: '/uploads/moduler-kitchen-1774802430130.jpg' },
   { title: 'Luxury Living Space', category: 'Living', location: 'Banjara Hills', img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80' },
   { title: 'Master Bedroom Suite', category: 'Bedroom', location: 'Gachibowli', img: '/uploads/bedroom1-1774802971070.jpg' },
-  { title: 'Walk-in Wardrobe Design', category: 'Wardrobe', location: 'Madhapur', img: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80' },
+  { title: 'Walk-in Wardrobe Design', category: 'Wardrobe', location: 'Madhapur', img: '/uploads/wardrobe-1774802430130.jpg' },
   { title: 'Open-Plan Kitchen Makeover', category: 'Kitchen', location: 'Kondapur', img: 'https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=800&q=80' },
   { title: 'Minimalist Living Room', category: 'Living', location: 'HITEC City', img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80' },
   { title: 'Cozy Bedroom Retreat', category: 'Bedroom', location: 'Kukatpally', img: '/uploads/bedroom2-1774802971070.jpg' },
