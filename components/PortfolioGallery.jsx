@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
 const categories = ['All', 'Kitchen', 'Living', 'Bedroom', 'Wardrobe'];
@@ -10,12 +10,50 @@ const projects = [
   { title: 'Luxury Living Space', category: 'Living', location: 'Banjara Hills', img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80' },
   { title: 'Master Bedroom Suite', category: 'Bedroom', location: 'Gachibowli', img: '/uploads/bedroom1-1774802971070.jpg' },
   { title: 'Walk-in Wardrobe Design', category: 'Wardrobe', location: 'Madhapur', img: '/uploads/wardrobe-1774802430130.jpg' },
-  { title: 'Open-Plan Kitchen Makeover', category: 'Kitchen', location: 'Kondapur', img: 'https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=800&q=80' },
+  { title: 'Open-Plan Kitchen Makeover', category: 'Kitchen', location: 'Kondapur', img: 'https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=800&q=80' },
   { title: 'Minimalist Living Room', category: 'Living', location: 'HITEC City', img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80' },
   { title: 'Cozy Bedroom Retreat', category: 'Bedroom', location: 'Kukatpally', img: '/uploads/bedroom2-1774802971070.jpg' },
-  { title: 'Premium Sliding Wardrobe', category: 'Wardrobe', location: 'Manikonda', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80' },
+  { title: 'Premium Sliding Wardrobe', category: 'Wardrobe', location: 'Manikonda', img: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&q=80' },
   { title: 'Island Kitchen Design', category: 'Kitchen', location: 'Begumpet', img: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&q=80' },
 ];
+
+function GrayscaleImage({ src, alt, priority = false }) {
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const el = imgRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.filter = 'grayscale(0%)';
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <Image
+      ref={imgRef}
+      src={src}
+      alt={alt}
+      fill
+      sizes="(max-width: 768px) 100vw, 33vw"
+      className="object-cover group-hover:scale-[1.05] transition-all duration-[1.2s]"
+      style={{
+        filter: 'grayscale(100%)',
+        transitionTimingFunction: 'var(--ease-out)',
+        transitionProperty: 'filter, transform',
+      }}
+      priority={priority}
+    />
+  );
+}
 
 export default function PortfolioGallery() {
   const [active, setActive] = useState('All');
@@ -47,13 +85,10 @@ export default function PortfolioGallery() {
             key={`${project.title}-${active}`}
             className={`group relative overflow-hidden bg-[#1a1a1a] ${i === 0 ? 'md:row-span-2' : ''} max-md:h-[280px]`}
           >
-            <Image
+            <GrayscaleImage
               src={project.img}
               alt={project.title}
-              fill
-              sizes="(max-width: 768px) 100vw, 33vw"
-              className="object-cover brightness-[.8] group-hover:scale-[1.07] group-hover:brightness-100 transition-all duration-800"
-              style={{ transitionTimingFunction: 'var(--ease-out)' }}
+              priority={i < 3}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/[.68] to-transparent flex flex-col items-start justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-400">
               <span className="text-[10px] tracking-[.22em] uppercase text-gold border border-gold px-3 py-1.5 mb-2">{project.category}</span>

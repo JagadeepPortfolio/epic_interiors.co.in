@@ -6,6 +6,7 @@ import WhatsAppFloat from '@/components/WhatsAppFloat';
 import Toast from '@/components/Toast';
 import ScrollReveal from '@/components/ScrollReveal';
 import PageLoader from '@/components/PageLoader';
+import SmoothScroll from '@/components/SmoothScroll';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -99,8 +100,10 @@ export default function RootLayout({ children }) {
       <body className="font-body bg-ink text-cream">
         <PageLoader />
         <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <SmoothScroll>
+          <main>{children}</main>
+          <Footer />
+        </SmoothScroll>
         <WhatsAppFloat />
         <Toast />
         <ScrollReveal />
